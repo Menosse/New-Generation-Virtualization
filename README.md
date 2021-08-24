@@ -12,9 +12,13 @@ Imagem - https://hub.docker.com/layers/163967041/famcsn2/myfirstapp/1.0/images/s
 
 ### Parte 03 - Construindo um ambiente completo através do Docker Compose
 Image - https://hub.docker.com/layers/163968154/famcsn2/myfirstapp/2.0/images/sha256-bd2b5d1b1938b78a099ebf118a62bf8ac6bfc03be779dd741d73c260212bfa4a?context=repo
+
 Sem Redis
+
 ![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/part3-0.png)
+
 Com Redis
+
 ![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/part3-1.png)
 
 
