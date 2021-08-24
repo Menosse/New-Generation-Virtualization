@@ -1,0 +1,8 @@
+FROM ubuntu:20.04
+
+LABEL version="4.0.0" description="Minha imagem depois do linter" maintainer="Fernando Menosse"
+
+RUN apt-get update -y && apt-get -y --no-install-recommends install htop && rm -rf /var/lib/apt/lists/*
+RUN cd / && mkdir fernando
+
+CMD /bin/bash
