@@ -39,38 +39,42 @@ Incluso no arquivo `./labdocker/docker-compose.yaml` (sobrescreve o ENV com o me
 Criar ambiente GKE e artifactory ou registry seguindo as instrucoes dos cards no Trello
 
 - App
-- 
--- file `./labdocker/app.py`
+file `./labdocker/app.py`
 
--- Modifica a app para apontar o host do redis para uma variavel de ambiente
+Modifica a app para apontar o host do redis para uma variavel de ambiente
 
--- file `/labdocker/Dockerfile`
+file `/labdocker/Dockerfile`
 
--- Adiciona uma nova variavel de ambiente para acesso ao redis
-
-
-- Artifactory/Registry \
--- Build da imagem com a modificacao feita acima \
--- Push da image para o artifactory
+Adiciona uma nova variavel de ambiente para acesso ao redis
 
 
-- GKE \
-- dir `./manifest`\
--- Os yamls irao criar 2 deployments (consequentemente replicaset e pods)
+- Artifactory/Registry
 
---- 1 para app web
+Build da imagem com a modificacao feita acima
 
---- 1 para redis
+Push da image para o artifactory
 
--- Criar 2 services
 
---- 1 service para a app web com type LB
+- GKE
 
---- 1 service para o redis (nao eh necessary definir type)
+dir `./manifest
 
--- Applicar todos os yaml files com o comando abaixo
+Os yamls irao criar:
+- 2 deployments (consequentemente replicaset e pods)
 
--- `kubectl apply -f .`
+1 - 1 para app web
+
+2 - 1 para redis
+
+- 2 services
+
+1 - 1 service para a app web com type LB
+
+2 - 1 service para o redis (nao eh necessary definir type)
+
+Applicar todos os yaml files com o comando abaixo
+
+`kubectl apply -f .`
 
 
 evidencia - ![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/part4-final-AppAndRedis.jpg)
