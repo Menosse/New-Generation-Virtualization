@@ -60,6 +60,7 @@ Push da image para o artifactory
 dir `./manifest
 
 Os yamls irao criar:
+
 2 deployments (consequentemente replicaset e pods)
 
 1 para app web e 1 para redis
