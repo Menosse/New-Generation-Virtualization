@@ -50,16 +50,12 @@ Criar ambiente GKE e artifactory ou registry seguindo as instrucoes dos cards no
 
 
 - Artifactory/Registry
-- 
--- Build da imagem com a modificacao feita acima
-
+-- Build da imagem com a modificacao feita acima \
 -- Push da image para o artifactory
 
 
 - GKE
-- 
 - dir `./manifest`
-- 
 -- Os yamls irao criar 2 deployments (consequentemente replicaset e pods)
 
 --- 1 para app web
