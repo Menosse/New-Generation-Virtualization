@@ -4,7 +4,7 @@ metadata:
   name: myfirstapp
   labels:
     app: myapp
-  namespace: labgke
+  namespace: labgke     # <<<---- YOUR NAMESPACE
 spec:
   replicas: 2
   selector:
@@ -17,12 +17,12 @@ spec:
     spec:
       containers:
       - name: web
-        image: "{region}/{project-id}/{registry-project}}/myfirstapp:5"
+        image: "{region}/{project-id}/{registry-project}}/myfirstapp:5"     # <<<---- YOUR IMAGE
         env:
           - name: MESSAGE
             value: "Hello from the GKE environment"
           - name: REDIS_HOST
-            value: myredis
+            value: myredis     # <<<---- YOUR REDIS SERVICE
         ports:
         - name: http
           containerPort: 80

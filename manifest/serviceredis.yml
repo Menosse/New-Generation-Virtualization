@@ -4,6 +4,7 @@ metadata:
   name: myredis
   labels:
     run: myredis
+  namespace: labgke     # <<<---- YOUR NAMESPACE
 spec:
   ports:
   - port: 6379

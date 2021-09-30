@@ -4,6 +4,7 @@ metadata:
   name: my-svc
   labels:
     run: myapp
+  namespace: labgke     # <<<---- YOUR NAMESPACE
 spec:
   type: LoadBalancer
   ports:
