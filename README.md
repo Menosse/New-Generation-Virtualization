@@ -31,8 +31,8 @@ Imagem - https://hub.docker.com/layers/163971258/famcsn2/myfirstapp/3.0/images/s
 ![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/desafio.png)
 
 ### Extra
-<<<<<<< HEAD
 Incluso no arquivo `./labdocker/docker-compose.yaml` (sobrescreve o ENV com o mesmo nome do Dockerfile)
+![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/extra.png)
 
 ## Lab Final - GKE env & Artifactory - Desafio
 ### DESAFIO
@@ -60,7 +60,3 @@ Criar ambiente GKE e artifactory ou registry seguindo as instrucoes dos cards no
 -- `kubectl apply -f .`
 
 evidencia - tbc
-=======
-Incluso no ./labdocker/docker-compose.yaml (sobrescreve o ENV com o mesmo nome do Dockerfile)
-![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/extra.png)
->>>>>>> be5012a1526a85ede32bebda58c1333f8dab7327
