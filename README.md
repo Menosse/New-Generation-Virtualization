@@ -59,4 +59,4 @@ Criar ambiente GKE e artifactory ou registry seguindo as instrucoes dos cards no
 -- Applicar todos os yaml files com o comando abaixo
 -- `kubectl apply -f .`
 
-evidencia - tbc
+evidencia - ![Alt text](https://raw.githubusercontent.com/Menosse/New-Generation-Virtualization/main/img/part4-final-AppAndRedis.jpg)
