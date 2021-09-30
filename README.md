@@ -60,17 +60,13 @@ Push da image para o artifactory
 dir `./manifest
 
 Os yamls irao criar:
-- 2 deployments (consequentemente replicaset e pods)
+2 deployments (consequentemente replicaset e pods)
 
-1 - 1 para app web
+1 para app web e 1 para redis
 
-2 - 1 para redis
+2 services
 
-- 2 services
-
-1 - 1 service para a app web com type LB
-
-2 - 1 service para o redis (nao eh necessary definir type)
+1 service para a app web com type LB e 1 service para o redis (nao eh necessary definir type)
 
 Applicar todos os yaml files com o comando abaixo
 
