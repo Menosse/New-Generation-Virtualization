@@ -13,8 +13,35 @@ Image - https://hub.docker.com/layers/163968154/famcsn2/myfirstapp/2.0/images/sh
 
 ## Lab - Docker Essentials - Desafio
 ### DESAFIO
-Incluso no ./labdocker/Dockerfile
+Incluso no arquivo `./labdocker/Dockerfile`
 Imagem - https://hub.docker.com/layers/163971258/famcsn2/myfirstapp/3.0/images/sha256-caabd2d8688c8f2981f30e8cbfa4798880420b7688468a807e575e3ec3e7f01e?context=repo
 
 ### Extra
-Incluso no ./labdocker/docker-compose.yaml (sobrescreve o ENV com o mesmo nome do Dockerfile)
+Incluso no arquivo `./labdocker/docker-compose.yaml` (sobrescreve o ENV com o mesmo nome do Dockerfile)
+
+## Lab Final - GKE env & Artifactory - Desafio
+### DESAFIO
+Criar ambiente GKE e artifactory ou registry seguindo as instrucoes dos cards no Trello
+
+- App
+-- file `./labdocker/app.py`
+-- Modifica a app para apontar o host do redis para uma variavel de ambiente
+-- file `/labdocker/Dockerfile`
+-- Adiciona uma nova variavel de ambiente para acesso ao redis
+
+- Artifactory/Registry
+-- Build da imagem com a modificacao feita acima
+-- Push da image para o artifactory
+
+- GKE
+- dir `./manifest`
+-- Os yamls irao criar 2 deployments (consequentemente replicaset e pods)
+--- 1 para app web
+--- 1 para redis
+-- Criar 2 services
+--- 1 service para a app web com type LB
+--- 1 service para o redis (nao eh necessary definir type)
+-- Applicar todos os yaml files com o comando abaixo
+-- `kubectl apply -f .`
+
+evidencia - tbc

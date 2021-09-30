@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstapp
+  labels:
+    app: myapp
+  namespace: labgke
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: web
+        image: "{region}/{project-id}/{registry-project}}/myfirstapp:5"
+        env:
+          - name: MESSAGE
+            value: "Hello from the GKE environment"
+          - name: REDIS_HOST
+            value: myredis
+        ports:
+        - name: http
+          containerPort: 80

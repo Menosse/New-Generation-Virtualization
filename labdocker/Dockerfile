@@ -3,6 +3,7 @@ FROM python:rc-slim
 
 # Definindo a variavel de ambiente
 ENV MESSAGE='Praesent vel viverra nisi. Mussum Ipsum, cacilds vidis litro abertis.'
+ENV REDIS_HOST='127.0.0.1'
 
 # Definindo o diretório onde a aplicação será armazenada
 WORKDIR /app

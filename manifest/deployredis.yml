@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myredis
+  labels:
+    app: myredis
+  namespace: labgke
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myredis
+  template:
+    metadata:
+      labels:
+        app: myredis
+    spec:
+      containers:
+      - name: redis
+        image: redis
+        ports:
+        - name: redis
+          containerPort: 6379
